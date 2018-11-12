@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ewhite"
+    tools:context="com.nbucedog.sxsocket.AboutActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="left">
+            <TextView
+                style="@style/textviewStyle_about"
+                android:text="软件名称：闪讯直连"/>
+            <TextView
+                style="@style/textviewStyle_about"
+                android:text="当前版本：v4.0.3"/>
+            <TextView
+                style="@style/textviewStyle_about"
+                android:text="运行环境：安卓4.1及以上"/>
+            <TextView
+                style="@style/textviewStyle_about"
+                android:text="浏览器内核：TBS X5 v3.6.0"/>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <TableRow
+                    style="@style/textviewStyle_about">
+                    <TextView
+                        android:textSize="9pt"
+                        android:text="本次更新："/>
+                    <TextView
+                        android:textSize="8pt"
+                        android:text="1.自动识别路由器IP\n2.优化启动过程\n3.增加部分功能\n4.修复部分漏洞\n5.键盘覆盖后可滑动"/>
+                </TableRow>
+                <TableRow
+                    style="@style/textviewStyle_about">
+                    <TextView
+                        android:textSize="9pt"
+                        android:text="历史更新："/>
+                    <TextView
+                        android:textSize="8pt"
+                        android:text="v4.0增加内部浏览器功能\nv3.0增加顶部菜单及多个功能\nv2.0增加注销功能按钮"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

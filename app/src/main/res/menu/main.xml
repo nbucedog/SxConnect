@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/router_item"
+        android:title="@string/router"></item>
+    <item
+        android:id="@+id/setting_item"
+        android:title="@string/setting"
+        ></item>
+    <item
+        android:id="@+id/help_item"
+        android:title="@string/help"
+        >
+    </item>
+    <item
+        android:id="@+id/about_item"
+        android:title="@string/about"
+        ></item>
+    <item
+        android:id="@+id/exit_item"
+        android:title="@string/exit"
+        ></item>
+</menu>

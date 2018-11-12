@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>帮助</title>
+    <style type="text/css">
+    	body{
+    		margin: 0px;
+    		min-height: 100vh;
+    		flex-direction: column;
+    		display: flex;
+    	}
+    	ul{
+    		overflow: hidden;
+    		margin: 0px;
+    		padding: 0px;
+    	}
+    	.li_top{
+    		list-style-type:none;
+    		width: 33%;
+    		margin-bottom: 0%;margin-top: 0% ;margin-right:0;margin-left:0;float: left;
+    		text-align: center;
+    		padding-top: 10px;
+    		padding-bottom: 10px;
+    		background: #4876FF;
+    		color: white;
+    	}
+    	#li_top1{
+    		background: white;
+    		color: blue;
+    		width:34%;
+    	}
+    	#mainFrame{
+    		flex: 1;
+    	}
+    </style>
+    <script type="text/javascript">
+    	function li_top_onclick(el){
+    		var li_top1 = document.getElementById('li_top1');
+    		li_top1.style.color = "white";
+    		li_top1.style.background = "#4876FF";
+    		var li_top2 = document.getElementById('li_top2');
+    		li_top2.style.color = "white";
+    		li_top2.style.background = "#4876FF";
+    		var li_top3 = document.getElementById('li_top3');
+    		li_top3.style.color = "white";
+    		li_top3.style.background = "#4876FF";
+
+    		el.style.color = "blue";
+    		el.style.background = "white";
+    	}
+    </script>
+</head>
+
+<body>
+	<div>
+		<ul>
+			<a href="settingdetail/index.html" target="mainFrameName">
+				<li class="li_top" id="li_top1" onclick="li_top_onclick(this)">
+					设置详解
+				</li>
+			</a>
+			<a href="operatestep/index.html" target="mainFrameName">
+				<li class="li_top" id="li_top2" onclick="li_top_onclick(this)">
+					初次使用
+				</li>
+			</a>
+			<a href="connectauthor/index.html" target="mainFrameName">
+				<li class="li_top" id="li_top3" onclick="li_top_onclick(this)">
+					联系作者
+				</li>
+			</a>
+		</ul>
+	</div>
+	<iframe id="mainFrame" name="mainFrameName" src="settingdetail/index.html" frameborder="0" width="100%"></iframe>
+</body>
+
+</html>

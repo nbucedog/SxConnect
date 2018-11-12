@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/title_style"
+        android:text="@string/router"/>
+    <Button
+        android:id="@+id/btn_reload_router"
+        android:text="刷新"
+        style="@style/title_btn"
+        />
+</RelativeLayout>

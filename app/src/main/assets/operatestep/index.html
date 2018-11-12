@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>使用步骤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+    }
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+    }
+    .swiper-slide {
+    	width: 100%;
+    }
+	.swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
+    .text_describe{
+    	width: 100%;
+    	height: 130px;
+    	font-size: 18px;
+    	font-weight: bold;
+    }
+    .img{
+    	width:100%;
+    }
+    .spetext{
+      color: green;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step1.png"></div>
+      	<div class="text_describe">
+      		<span>第一步:输入你的闪讯用户名和密码，先<span style="color: red;">别</span>点击登录</span>
+      	</div>
+      </div>
+      
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step2.png"></div>
+      	<div class="text_describe">
+      		<span>第二步：点击右上角<span class="spetext">菜单</span>（三个点），在弹出的菜单选项中点击<span class="spetext">路由器</span>，进入路由器界面</span>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step3.png"></div>
+      	<div class="text_describe">
+      		<span>第三步：第一次通过内置浏览器进入路由器需要输入密码（有的浏览器还需要输入用户名），再点击确认</span>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step4.png"></div>
+      	<div class="text_describe">
+      		<span>第四步：登录进入路由器界面，找到WAN口的IP，不同路由器界面不同，自己找一下</span>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step5.png"></div>
+      	<div class="text_describe">
+      		<span>第五步：路由器界面放大一下，把WAN的IP记住，然后返回主界面</span>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+      	<div class="div_img"><img class="img" src="image/step6.png"></div>
+      	<div class="text_describe">
+      		<span>第六步：把刚才记住的WAN口IP填在<span class="spetext">IP地址</span>一栏，最后，点击<span class="spetext">登录</span></span>
+      	</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="div_img"><img class="img" src="image/step7.png"></div>
+        <div class="text_describe">
+          <span>另外：点击右上角的<span class="spetext">菜单</span>（三个点），在弹出的菜单选项中点击<span class="spetext">设置</span>，进入设置界面</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="div_img"><img class="img" src="image/step8.png"></div>
+        <div class="text_describe">
+          <span>填写<span class="spetext">常用外网网段</span>和<span class="spetext">路由器IP</span>，然后点击<span class="spetext">全部保存</span>。关于设置界面的具体说明，请</span><a href="../settingdetail/index.html">点击这里</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+  </script>
+</body>
+</html>

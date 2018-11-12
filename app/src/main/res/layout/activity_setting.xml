@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.Toolbar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!---->
+<!--</android.support.v7.widget.Toolbar>-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nbucedog.sxsocket.setting">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left">
+            <LinearLayout
+                style="@style/linearbound_setting">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/textStyle_setting"
+                    android:text="数据清理："/>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2">
+                    <TableRow
+                        android:background="@drawable/underline">
+                        <CheckBox
+                            android:id="@+id/ckbox_cache"
+                            android:text="Cache"
+                            android:textSize="16dp"
+                            android:checked="true"/>
+                        <CheckBox
+                            android:id="@+id/ckbox_cook"
+                            android:text="Cookies"
+                            android:textSize="16dp"
+                            android:checked="false"/>
+                        <Button
+                            android:id="@+id/btn_clr_setting"
+                            android:text="清理"
+                            android:textSize="18dp"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linearbound_setting"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textStyle_setting"
+                    android:text="常用外网网段(WAN)："/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0">
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/et_ipWAN"
+                            android:layout_height="42dp"
+                            android:textSize="21dp"
+                            android:background="@drawable/edit_bg"/>
+                        <Button
+                            android:id="@+id/btn_WANpre_setting"
+                            style="@style/btn_pre_setting"
+                            android:text="@string/preserve"
+                            android:layout_gravity="center_vertical"/>
+                    </TableRow>
+                </TableLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textStyle_setting"
+                    android:text="路由器IP(LAN)："/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0">
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/et_router"
+                            android:layout_height="42dp"
+                            android:textSize="21dp"
+                            android:background="@drawable/edit_bg"/>
+                        <Button
+                            android:id="@+id/btn_LANpre_setting"
+                            style="@style/btn_pre_setting"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/preserve"/>
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1">
+                    <TableRow>
+                        <Button
+                            android:id="@+id/btn_preserve"
+                            style="@style/buttonStyle_setting"
+                            android:text="全部保存"/>
+                        <Button
+                            android:id="@+id/btn_cancel"
+                            style="@style/buttonStyle_setting"
+                            android:text="@string/back"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

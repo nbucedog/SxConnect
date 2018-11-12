@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">闪讯直连</string>
+    <string name="username">用户名&#160;&#160;</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码&#160;&#160;</string>
+    <string name="ipaddress">IP地址&#160;&#160;</string>
+    <string name="login">登&#160;录</string>
+    <string name="logout">注&#160;销</string>
+    <string name="preserve">保&#160;存</string>
+    <string name="cancel">取&#160;消</string>
+    <string name="back">返&#160;回</string>
+
+    <string name="router">路由器</string>
+    <string name="setting">设&#160;&#160;&#160;&#160;置</string>
+    <string name="help">帮&#160;&#160;&#160;&#160;助</string>
+    <string name="about">关&#160;&#160;&#160;&#160;于</string>
+    <string name="exit">退&#160;&#160;&#160;&#160;出</string>
+
+
+    <string name="autor">宁大通信狗</string>
+    <string name="copyright">Copyright © 宁大通信狗</string>
+
+    <string name="description">(说明：当此栏有内容且保存成功，程序重启时，此栏的内容将自动覆盖登录页面中IP地址栏的内容。若此栏为空，程序重启时，登录页面中的IP地址栏则保留之前的内容。)</string>
+</resources>
