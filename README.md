@@ -1,3 +1,3 @@
 # SxConnect
-[点击这里下载](https://github.com/nbucedog/SxConnect/releases)
-[Click to download](https://github.com/nbucedog/SxConnect/releases)
+[安装包下载](https://github.com/nbucedog/SxConnect/releases)
+[Click to download apk](https://github.com/nbucedog/SxConnect/releases)
